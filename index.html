@@ -15,40 +15,149 @@
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
 
+    <!-- Imported Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark rounded-pill px-3">
-        <div class="container-fluid justify-content-center">
-            <ul class="navbar-nav">
+    <nav class="navbar navbar-expand-lg custom-nav">
+        <div class="container-fluid">
 
-                <li class="nav-item">
-                    <a class="nav-link active" href="#home">Home</a>
-                </li>
+            <!-- Hamburger button (left-aligned) -->
+            <button class="navbar-toggler me-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="#design">UI/UX Design</a>
-                </li>
+            <!-- Collapsible links -->
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="design.html">UI/UX Design</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="webdev.html">Web Development</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gamedev.html">Game Development</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacts.html">Resume/Contacts</a>
+                    </li>
+                </ul>
+            </div>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="#development">Web Development</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="#game">Game Development</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact">Resume/Contacts</a>
-                </li>
-
-            </ul>
         </div>
     </nav>
 
-    <h1>Annika Koyle</h1>
+    <!-- About Section -->
+    <section class="py-5 about-section">
+        <div class="container">
+            <div class="row align-items-center justify-content-center">
+
+                <!-- Profile Image -->
+                <div class="col-md-4 text-center mb-4 mb-md-0">
+                    <img src="Images/Annika Koyle Profile.jpeg" alt="Annika Koyle" class="img-fluid profile-img">
+                </div>
+
+                <!-- Name and Bio -->
+                <div class="col-md-6">
+                    <h1>Annika Koyle</h1>
+                    <p>
+                        A student at Boise State University (BSU) working towards earning their Bachelor’s in Games,
+                        Interactive Media, & Mobile Technology (GIMM) and a Minor in Computer Science. She is gaining
+                        experience in Game Development but has a passion for Web Development and Design. They enjoy
+                        taking the time to learn and discover new content, expanding their knowledge and gaining new
+                        skills.
+                    </p>
+
+                    <!-- Skills & Technologies Section -->
+                    <h3 class="mb-3">Skills & Technologies</h3>
+                    <div class="row g-3 justify-content-center align-items-center">
+
+                        <!-- HTML5 -->
+                        <div class="col-auto text-center">
+                            <img src="Images/HTML5.png" alt="HTML5" class="img-fluid icon">
+                        </div>
+
+                        <!-- CSS3 -->
+                        <div class="col-auto text-center">
+                            <img src="Images/CSS3.png" alt="CSS3" class="img-fluid icon">
+                        </div>
+
+                        <!-- JavaScript -->
+                        <div class="col-auto text-center">
+                            <img src="Images/JavaScript.png" alt="JavaScript" class="img-fluid icon">
+                        </div>
+
+                        <!-- Git -->
+                        <div class="col-auto text-center">
+                            <img src="Images/Git.png" alt="Git" class="img-fluid icon">
+                        </div>
+
+                        <!-- GitHub -->
+                        <div class="col-auto text-center">
+                            <img src="Images/GitHub.png" alt="GitHub" class="img-fluid icon">
+                        </div>
+
+                        <!-- Unity -->
+                        <div class="col-auto text-center">
+                            <img src="Images/Unity.png" alt="Unity" class="img-fluid icon">
+                        </div>
+
+                        <!-- Unreal Engine -->
+                        <div class="col-auto text-center">
+                            <img src="Images/Unreal Engine.png" alt="Unreal Engine" class="img-fluid icon">
+                        </div>
+
+                        <!-- Visual Studio -->
+                        <div class="col-auto text-center">
+                            <img src="Images/Visual Studio Code (VS Code).png" alt="Visual Studio"
+                                class="img-fluid icon">
+                        </div>
+
+                        <!-- IntelliJ IDEA -->
+                        <div class="col-auto text-center">
+                            <img src="Images/IntelliJ IDEA.png" alt="IntelliJ IDEA" class="img-fluid icon">
+                        </div>
+
+                        <!-- Adobe Photoshop -->
+                        <div class="col-auto text-center">
+                            <img src="Images/Adobe Photoshop.png" alt="Adobe Photoshop" class="img-fluid icon">
+                        </div>
+
+                        <!-- Adobe Premiere Pro -->
+                        <div class="col-auto text-center">
+                            <img src="Images/Adobe Premiere Pro.png" alt="Adobe Premiere Pro" class="img-fluid icon">
+                        </div>
+
+                        <!-- Blender -->
+                        <div class="col-auto text-center">
+                            <img src="Images/Blender.png" alt="Blender" class="img-fluid icon">
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
 
 </body>
+
+<footer class="footer text-center py-4">
+    <div class="container">
+        <p class="mb-0">© 2026 Annika Koyle. All rights reserved.</p>
+    </div>
+</footer>
 
 </html>
