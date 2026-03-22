@@ -61,10 +61,134 @@
 
 </body>
 
+<section>
+    <div class="showcase-separator">
+        <br>
+        <h2 class="text-center showcase-separator">Showcase of my work below!</h2>
+        <br>
+        <h4 class="text-center">2025-2024</h4>
+        <br>
+    </div><br>
+
+    <div class="container">
+        <section class="row align-items-center justify-content-center">
+
+            <div class="col-md-6">
+                <div class="container artifact-section clickable-card" data-bs-toggle="modal"
+                    data-bs-target="#pkmnModal">
+
+                    <div class="row align-items-center justify-content-center">
+
+                        <!-- Project Name and Intro Description -->
+
+                        <h2> Movie Suggestions Form</h2>
+
+                        <hr>
+
+                        <p class="marginTextRight">
+                            Designing a form that takes user input and provides movie suggestions based on the user's
+                            preferences using an AI response.
+                        </p>
+
+                        <!-- Preliminary Image -->
+                        <img src="Images/pkmn_Low_Fidelity_Prototype.png" alt="Pkmn.gg Low Fidelity Prototype"
+                            class="img-fluid showcase-img">
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 text-center"></div>
+
+        </section>
+    </div>
+
+    <!-- MODAL -->
+    <div class="modal fade" id="pkmnModal" tabindex="-1">
+        <div class="modal-dialog custom-modal modal-dialog-centered">
+            <div class="modal-content">
+
+                <!-- HEADER -->
+                <div class="modal-header d-flex justify-content-between align-items-center">
+
+                    <div class="d-flex align-items-center gap-2">
+                        <h5 class="modal-title mb-0">Movie Suggestions Form- An AI Generative Website</h5>
+
+                        <span class="divider">|</span>
+
+                        <img src="Images/HTML5.png" alt="HTML5" class="img-fluid skillSetsIcon">
+                        <img src="Images/CSS3.png" alt="CSS3" class="img-fluid skillSetsIcon">
+                        <img src="Images/JavaScript.png" alt="JavaScript" class="img-fluid skillSetsIcon">
+
+                    </div>
+
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+
+                </div>
+
+                <!-- BODY -->
+                <div class="modal-body">
+                    <div class="row">
+
+                        <!-- LEFT: Slideshow -->
+                        <div class="col-md-6 text-center">
+                            <img id="slideImage" src="image1.jpg" class="img-fluid rounded">
+
+                            <div class="mt-3">
+                                <button id="prevBtn" class="btn btn-secondary btn-sm">Prev</button>
+                                <button id="nextBtn" class="btn btn-secondary btn-sm">Next</button>
+                            </div>
+                        </div>
+
+                        <!-- RIGHT: Text -->
+                        <div class="col-md-6">
+                            <p>
+                                This project consisted of taking an idea and turning it into a form that would take in
+                                user input and filter it into a prompt. This prompt would then be sent to an LLM,
+                                specifically chatgpt in this case, the result given back would then be sent back and
+                                displayed to the user. I specifically decided on a form that would help to give Movie
+                                Suggestions based on a specific set of parameters. I learned how to create forms, use
+                                the input given from the user, and utilize AI in a creative and efficient way. My
+                                favorite part about this project was being able to create something I could use in my
+                                daily life as both my family and I often struggle to find Movies to watch.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</section>
+
+</body>
+
 <footer class="footer text-center py-4">
     <div class="container">
-        <p class="mb-0">© 2026 Annika Koyle. All rights reserved.</p>
+        <p class="mb-0">© 2026 Annika Koyle. All rights reserved. Trademarks and images belong to their respective
+            owners.</p>
     </div>
 </footer>
+
+<script>
+    const images = ["image1.jpg", "image2.jpg", "image3.jpg"];
+    let index = 0;
+
+    const slideImage = document.getElementById("slideImage");
+
+    document.getElementById("nextBtn").onclick = function () {
+        index++;
+        if (index >= images.length) index = 0;
+        slideImage.src = images[index];
+    };
+
+    document.getElementById("prevBtn").onclick = function () {
+        index--;
+        if (index < 0) index = images.length - 1;
+        slideImage.src = images[index];
+    };
+</script>
 
 </html>
